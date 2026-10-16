@@ -1,0 +1,16 @@
+[project]
+name = "wordfreq"
+version = "0.1.0"
+description = "A small, dependency-free word frequency analyzer."
+requires-python = ">=3.9"
+authors = [{ name = "agent", email = "agent@agent-server.local" }]
+keywords = ["nlp", "statistics", "cli"]
+
+[project.scripts]
+wordfreq = "wordfreq.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
